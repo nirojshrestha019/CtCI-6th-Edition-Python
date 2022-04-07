@@ -18,6 +18,7 @@ def check_permutation_by_count(str1, str2):
         return False
     counter = [0] * 256
     for c in str1:
+        #making a counter count of each char i.e., counter value + 1
         counter[ord(c)] += 1
     for c in str2:
         if counter[ord(c)] == 0:
