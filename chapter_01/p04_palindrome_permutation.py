@@ -52,6 +52,7 @@ def is_palindrome_bit_vector(phrase):
     return (r - 1) & r == 0
 
 
+# this
 def is_palindrome_permutation_pythonic(phrase):
     """function checks if a string is a permutation of a palindrome or not"""
     counter = Counter(clean_phrase(phrase))

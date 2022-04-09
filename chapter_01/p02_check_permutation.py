@@ -2,7 +2,7 @@
 import unittest
 from collections import Counter
 
-
+# this
 def check_permutation_by_sort(s1, s2):
     if len(s1) != len(s2):
         return False
@@ -26,7 +26,7 @@ def check_permutation_by_count(str1, str2):
         counter[ord(c)] -= 1
     return True
 
-
+# this
 def check_permutation_pythonic(str1, str2):
     if len(str1) != len(str2):
         return False

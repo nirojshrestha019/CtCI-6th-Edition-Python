@@ -21,6 +21,7 @@ def urlify_algo(string, length):
     return "".join(char_list[new_index:])
 
 
+# this
 def urlify_pythonic(text, length):
     """solution using standard library"""
     return text[:length].replace(" ", "%20")

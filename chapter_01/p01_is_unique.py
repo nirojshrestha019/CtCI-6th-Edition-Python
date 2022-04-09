@@ -2,7 +2,7 @@ import time
 import unittest
 from collections import defaultdict
 
-
+# this
 def is_unique_chars_algorithmic(string):
     # Assuming character set is ASCII (128 characters)
     if len(string) > 128:
@@ -20,7 +20,7 @@ def is_unique_chars_algorithmic(string):
 
     return True
 
-
+# this
 def is_unique_chars_pythonic(string):
     return len(set(string)) == len(string)
 
