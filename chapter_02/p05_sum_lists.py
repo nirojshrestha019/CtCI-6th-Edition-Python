@@ -1,4 +1,4 @@
-from chapter_02.linked_list import LinkedList
+from linked_list import LinkedList
 
 
 def sum_lists(ll_a, ll_b):
@@ -17,6 +17,7 @@ def sum_lists(ll_a, ll_b):
         ll.add(result % 10)
         carry = result // 10
 
+    # add the last carry to tail of the new linked list ll    
     if carry:
         ll.add(carry)
 
@@ -113,3 +114,9 @@ def example():
 
 if __name__ == "__main__":
     example()
+    print("Local test")    
+    ll_a = LinkedList([4, 0, 9])
+    ll_b = LinkedList([3, 0, 9])
+    print(ll_a)
+    print(ll_b)
+    print(sum_lists(ll_a, ll_b))

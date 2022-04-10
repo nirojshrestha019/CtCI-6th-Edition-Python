@@ -1,6 +1,5 @@
 import time
-
-from chapter_02.linked_list import LinkedList
+from linked_list import LinkedList
 
 
 def remove_dups(ll):
@@ -19,6 +18,7 @@ def remove_dups(ll):
     return ll
 
 
+# if no buffer allowed i.e seen is buffer in previous
 def remove_dups_followup(ll):
     runner = current = ll.head
     while current:

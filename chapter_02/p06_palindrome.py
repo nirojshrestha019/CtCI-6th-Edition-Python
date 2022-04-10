@@ -1,6 +1,6 @@
 import time
 
-from chapter_02.linked_list import LinkedList
+from linked_list import LinkedList
 
 
 def is_palindrome(ll):
@@ -12,6 +12,7 @@ def is_palindrome(ll):
         slow = slow.next
         fast = fast.next.next
 
+    # has odd number of elements, so skip the middle element
     if fast:
         slow = slow.next
 
@@ -88,11 +89,13 @@ def is_palindrome_recursive(ll):
             return 1 + get_len(node.next)
 
     def recursive_transverse(node, length):
+        # when the length equals 0 or 1, we're at the center of the linked list
         if not node or length == 0:  # even list
             return True, node
         elif length == 1:  # odd list
             return True, node.next
 
+        # when the length equals 0 or 1, we're at the center of the linked list
         _is_palindrome, fwd_node = recursive_transverse(node.next, length - 2)
 
         if not _is_palindrome or not fwd_node:
